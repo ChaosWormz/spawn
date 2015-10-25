@@ -52,7 +52,7 @@ end
 
 minetest.register_chatcommand("spawn", {
 	description = "Teleport to the spawn location",
-	privs = {spawn=true},
+	privs = {},
 	func = function(name, _)
 		local ok = put_player_at_spawn(minetest.get_player_by_name(name))
 		if ok then
